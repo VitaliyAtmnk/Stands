@@ -29,61 +29,85 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            nud = new NumericUpDown();
+            nudAge = new NumericUpDown();
             button1 = new Button();
-            textBox1 = new TextBox();
-            ((System.ComponentModel.ISupportInitialize)nud).BeginInit();
+            txtOut = new TextBox();
+            label2 = new Label();
+            nudStudy = new NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)nudAge).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nudStudy).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(249, 108);
+            label1.Location = new Point(206, 85);
             label1.Name = "label1";
-            label1.Size = new Size(34, 20);
+            label1.Size = new Size(36, 20);
             label1.TabIndex = 0;
-            label1.Text = "Part";
+            label1.Text = "Age";
             // 
-            // nud
+            // nudAge
             // 
-            nud.Location = new Point(289, 106);
-            nud.Maximum = new decimal(new int[] { 8, 0, 0, 0 });
-            nud.Minimum = new decimal(new int[] { 3, 0, 0, 0 });
-            nud.Name = "nud";
-            nud.Size = new Size(160, 27);
-            nud.TabIndex = 1;
-            nud.Value = new decimal(new int[] { 3, 0, 0, 0 });
+            nudAge.Location = new Point(248, 85);
+            nudAge.Maximum = new decimal(new int[] { 8, 0, 0, 0 });
+            nudAge.Minimum = new decimal(new int[] { 3, 0, 0, 0 });
+            nudAge.Name = "nudAge";
+            nudAge.Size = new Size(201, 27);
+            nudAge.TabIndex = 1;
+            nudAge.Value = new decimal(new int[] { 3, 0, 0, 0 });
             // 
             // button1
             // 
-            button1.Location = new Point(455, 104);
+            button1.Location = new Point(455, 90);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(94, 48);
             button1.TabIndex = 2;
             button1.Text = "Load";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // textBox1
+            // txtOut
             // 
-            textBox1.Location = new Point(253, 151);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(296, 224);
-            textBox1.TabIndex = 3;
+            txtOut.Location = new Point(196, 151);
+            txtOut.Multiline = true;
+            txtOut.Name = "txtOut";
+            txtOut.Size = new Size(353, 273);
+            txtOut.TabIndex = 3;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(196, 118);
+            label2.Name = "label2";
+            label2.Size = new Size(46, 20);
+            label2.TabIndex = 0;
+            label2.Text = "Study";
+            // 
+            // nudStudy
+            // 
+            nudStudy.Location = new Point(248, 118);
+            nudStudy.Maximum = new decimal(new int[] { 10, 0, 0, 0 });
+            nudStudy.Name = "nudStudy";
+            nudStudy.Size = new Size(201, 27);
+            nudStudy.TabIndex = 1;
+            nudStudy.Value = new decimal(new int[] { 3, 0, 0, 0 });
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(textBox1);
+            Controls.Add(txtOut);
             Controls.Add(button1);
-            Controls.Add(nud);
+            Controls.Add(nudStudy);
+            Controls.Add(label2);
+            Controls.Add(nudAge);
             Controls.Add(label1);
             Name = "Form1";
             Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)nud).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nudAge).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nudStudy).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -91,8 +115,10 @@
         #endregion
 
         private Label label1;
-        private NumericUpDown nud;
+        private NumericUpDown nudAge;
         private Button button1;
-        private TextBox textBox1;
+        private TextBox txtOut;
+        private Label label2;
+        private NumericUpDown nudStudy;
     }
 }
